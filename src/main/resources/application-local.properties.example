@@ -1,0 +1,12 @@
+# Copia este archivo como application-local.properties (no subir a Git)
+# y completa con tu connection string de MongoDB Atlas.
+#
+# Pasos Atlas:
+# 1. Crear cluster gratuito
+# 2. Database Access -> Add User (user/password)
+# 3. Network Access -> Add IP Address -> Allow Access from Anywhere (0.0.0.0/0)
+# 4. Connect -> Drivers -> copiar URI
+# 5. Reemplazar <password> y asegurar que la BD sea tvmaze_middleware
+
+spring.data.mongodb.uri=mongodb+srv://USER:PASSWORD@CLUSTER.mongodb.net/tvmaze_middleware?retryWrites=true&w=majority
+spring.data.mongodb.database=tvmaze_middleware
